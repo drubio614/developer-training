@@ -140,173 +140,83 @@
                     <button id="copyCodeButton" class="copy-button" aria-label="Copy HTML code to clipboard">Copy Code</button>
                     <span id="copyMessage" class="copy-message" aria-live="polite">Copied!</span>
                     <pre><code id="htmlTemplateCode" class="language-html">
-&lt;!doctype html&gt;
+&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
+    &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;My Semantic HTML Page - Exercise&lt;/title&gt;
+    &lt;title&gt;Your Accessible Page Exercise - Styled Example&lt;/title&gt;
+    &lt;!-- Link to Tailwind CSS for modern styling --&gt;
     &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
     &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
     &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
     &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"&gt;
     &lt;style&gt;
+        /* Custom styles for 'Inter' font and smooth scrolling */
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
+            scroll-behavior: smooth;
         }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1.5rem;
-            background-color: #fff;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        /* Basic styling for semantic elements for clarity */
-        header {
-            background-color: #f3f4f6; /* gray-100 */
-            padding: 1.5rem;
-            border-radius: 0.5rem 0.5rem 0 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1f2937; /* gray-900 */
-        }
-        nav {
-            background-color: #e5e7eb; /* gray-200 */
-            padding: 0.75rem 1.5rem;
-            border-bottom: 1px solid #d1d5db; /* gray-300 */
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 0;
-            padding: 0;
-        }
-        nav a {
-            color: #4b5563; /* gray-700 */
-            text-decoration: none;
-            font-weight: 500;
-        }
-        nav a:hover {
-            color: #1f2937; /* gray-900 */
-        }
-        main {
-            padding: 2rem 1.5rem;
-        }
-        article {
-            border: 1px solid #e5e7eb; /* gray-200 */
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        article h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #1f2937;
+        /* Basic styling for section headings */
+        .section-heading {
+            border-bottom: 2px solid #e5e7eb; /* gray-200 */
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
             margin-bottom: 1rem;
-            border-bottom: none; /* Override general h2 styling for article */
-            padding-bottom: 0;
-            margin-top: 0;
-        }
-        article h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-        article h4 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-top: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-        article h5 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-top: 1rem;
-            margin-bottom: 0.4rem;
-        }
-        article h6 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-top: 0.8rem;
-            margin-bottom: 0.3rem;
-        }
-
-        footer {
-            background-color: #f3f4f6; /* gray-100 */
-            padding: 1rem;
-            border-radius: 0 0 0.5rem 0.5rem;
-            text-align: center;
-            color: #6b7280; /* gray-500 */
-            font-size: 0.9rem;
-        }
-        /* Styling for emphasis tags */
-        strong {
-            color: #dc2626; /* red-600 */
-            font-weight: 700;
-        }
-        em {
-            color: #059669; /* green-600 */
-            font-style: italic;
         }
     &lt;/style&gt;
 &lt;/head&gt;
-&lt;body class="bg-gray-100"&gt;
+&lt;body class="bg-gray-100 text-gray-900 antialiased leading-relaxed"&gt;
 
-    &lt;div class="container"&gt;
+    &lt;div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl"&gt;
 
         &lt;!-- PART 1: Creating the Basic Structure --&gt;
 
         &lt;!-- Your HEADER goes here --&gt;
+        Welcome to the Angler's Guide
 
         &lt;!-- Your NAVIGATION goes here --&gt;
+        About Us
+        Fishing Techniques
+        Best Spots
+        Contact
 
         &lt;!-- Your MAIN content area goes here --&gt;
-
-        &lt;!-- Your FOOTER goes here --&gt;
-
-
         &lt;!-- PART 2: Adding Content and Enhancing Accessibility --&gt;
-
         &lt;!-- Inside your MAIN element, create an ARTICLE.
              Then add headings (h2, h3, h4, etc.) and paragraphs (p)
              to structure your article content.
              Remember to follow a logical heading hierarchy! --&gt;
+        About Our Guide
+        This guide is your comprehensive resource for all things fishing. We aim to share knowledge for both beginners and experienced anglers. Our goal is to promote sustainable fishing practices and appreciation for aquatic environments.
 
         &lt;!-- Add LISTS (ul, ol, dl) and EMPHASIS (strong, em) within your article. --&gt;
+        Types of Fishing
+        Fly Fishing: An elegant method using lightweight lures.
+        Baitcasting: Ideal for precision and heavy lures.
+        Spinning: Versatile and popular for various fish.
+        Ice Fishing: Exciting winter pursuit on frozen lakes.
 
+        Fishing Safety Tips
+        Always wear a life vest near water.
+        Be aware of weather conditions.
+        Tell someone where you are going.
+        Handle fish with care.
 
-        &lt;!-- Example of how to use a comment to guide yourself: --&gt;
-        &lt;!-- &lt;main&gt;
-            &lt;article&gt;
-                &lt;h2&gt;My Article Title&lt;/h2&gt;
-                &lt;p&gt;This is my first paragraph.&lt;/p&gt;
-                &lt;h3&gt;A Sub-section&lt;/h3&gt;
-                &lt;p&gt;This paragraph belongs to the sub-section.&lt;/p&gt;
-                &lt;ul&gt;
-                    &lt;li&gt;Item One &lt;strong&gt;important!&lt;/strong&gt;&lt;/li&gt;
-                    &lt;li&gt;Item Two &lt;em&gt;really important!&lt;/em&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/article&gt;
-        &lt;/main&gt; --&gt;
+        &lt;!-- Your FOOTER goes here --&gt;
+        © 2024 The Angler's Guide. All rights reserved.
 
     &lt;/div&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;
                     </code></pre>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="text-lg">Once you've completed the exercise, you can view a fully structured and styled example here:
+                        <a href="https://drubio614.github.io/developer-training/exercise-complete.html" class="text-blue-600 hover:text-blue-800 underline transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                            Completed Example
+                        </a>
+                    </p>
                 </div>
             </section>
         </main>
@@ -325,7 +235,40 @@
             const copyCodeButton = document.getElementById('copyCodeButton');
             const copyMessage = document.getElementById('copyMessage');
 
-            // Apply Prism.js highlighting to the pre-filled code
+            /**
+             * Displays a temporary message box at the bottom center of the screen.
+             * @param {string} message The message to display.
+             * @param {string} type 'success' or 'error' to determine background color.
+             */
+            function showMessageBox(message, type = 'success') {
+                const messageBox = document.createElement('div');
+                messageBox.textContent = message;
+                messageBox.style.cssText = `
+                    position: fixed;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: ${type === 'success' ? '#48bb78' : '#dc2626'}; /* green-500 or red-600 */
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    z-index: 1000;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                `;
+                document.body.appendChild(messageBox);
+
+                setTimeout(() => {
+                    messageBox.style.opacity = '1';
+                }, 10); // Small delay to trigger transition
+
+                setTimeout(() => {
+                    messageBox.style.opacity = '0';
+                    messageBox.addEventListener('transitionend', () => messageBox.remove(), { once: true });
+                }, 3000); // Hide after 3 seconds
+            }
+
+            // Apply Prism.js highlighting to the pre-loaded content when the page loads
             Prism.highlightElement(htmlTemplateCodeElement);
 
             /**
@@ -348,13 +291,11 @@
                         }, 2000); // Hide message after 2 seconds
                     } else {
                         console.error('Fallback: Could not copy text');
-                        // Fallback for older browsers or if execCommand fails
-                        // Using a simple alert for fall back as per instructions
-                        alert('Could not copy code. Please select and copy manually.');
+                        showMessageBox('Could not copy code. Please select and copy manually.', 'error');
                     }
                 } catch (err) {
                     console.error('Error copying text: ', err);
-                    alert('Error copying code. Please select and copy manually.');
+                    showMessageBox('Error copying code. Please select and copy manually.', 'error');
                 } finally {
                     document.body.removeChild(tempTextArea);
                 }
